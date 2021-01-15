@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:padding="@dimen/pad10">
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="8dp"
+            app:cardCornerRadius="8dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/pad10">
+
+            <ImageView
+                    android:id="@+id/iv_team"
+                    android:layout_width="65dp"
+                    android:layout_height="98dp"
+                    android:src="@color/colorPrimaryDark" />
+
+            <TextView
+                    android:id="@+id/tv_team"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:layout_marginStart="@dimen/pad15"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/team_home"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/f16" />
+
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/txtDescTeam"
+                android:layout_width="260dp"
+                android:layout_height="57dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/pad40"
+                android:ellipsize="end"
+                android:maxLines="4"
+                android:textSize="@dimen/f16"
+                tools:text="Manchester United Football Club is an English professional football club, based in Old Trafford, Greater Manchester that plays in the Premier League. Founded as Newton Heath LYR Football Club in 1878, the club changed its name to Manchester United in 1902 and moved to Old Trafford in 1910. They are regarded as one of the most successful clubs in English football." />
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
